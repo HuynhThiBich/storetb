@@ -1,0 +1,308 @@
+.textnav {
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 30px;
+    color: beige;
+}
+.sua {
+    height: 300px;
+    padding-left: 0px ;
+    padding-right: 0px ;
+}
+.hinhslierphai {
+    height: 200px;
+    width: 300px;
+    margin: 0px 5px 5px 5px;
+    border-radius: .25rem;
+   
+}
+.homepage {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 15px;
+}
+.khoangcach {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.bgcolorcolmd12pro {
+    background-color:#ffedb0;
+}
+.bgcolorcolmd12pro {
+    margin-bottom: 10px;
+    top: 5px;
+}
+.dinhdangcontro {
+    cursor: pointer;
+}
+.dinhdangcontro {
+    padding-bottom: 10px;
+    padding-top: 5px;
+   
+}
+.bgcolorcolmd12 {
+    background-color: #ffedb0;
+    top: 5px;
+    margin-bottom: 10px;
+}
+
+
+.list-group-item.active {
+    z-index: 2;
+    color: black;
+    background-color:#11d162c9;
+    border-color: gray;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.texlistgroup {
+    text-align: center;
+    font-size: 19px;
+    color: black;
+}
+a {
+    color: black;
+}
+.sales {
+    position: absolute;
+    top: 308px;
+    height: 30px;
+    left: 5px;
+    background: #c6b9bc;
+    border-radius: 40px;
+    width: 45%;
+    padding: 3px 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 11px;
+}
+.sticker {
+    height: 30px;
+    top: -1px;
+    position: absolute;
+}
+.salestex {
+    text-align: center;
+    margin-top: 4px;
+}
+.tratruoc {
+    float: right;
+    position: relative;
+    background: #efe9299e;
+    border-radius: 100px;
+    width: 25%;
+    padding: 20px 4px;
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 22px;
+    margin-top: -88px;
+}
+.khungcardbody {
+    margin-top: -29px;
+}
+
+.doimaumose:hover {
+    text-decoration: none;
+}
+/* .doimaumose:link {
+    color:black;
+} */
+.doimaumose:visited {
+    color:black;
+}
+.doimaumose:hover {
+    color: green;
+}
+.doimaumose:active {
+    color: red;
+}
+.doimaumose {
+    text-decoration: none;
+}
+.baner-sale {
+    padding-top: 5px;
+}
+.khtt {
+    margin-top: 15px;
+    padding-left: 450px;
+    color: #19dfb1;
+    
+
+}
+.sl-cotheban {
+    flex: none;
+    max-width: none;
+}
+.sldthuonghieu {
+   flex: none;
+   padding-left: 30px;
+   padding-right: 0px;
+   max-width: none;
+}
+.textfont{
+    font-style: italic; 
+    font-weight: bold; 
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+.borderthanh {
+    border-top: 1px solid #eee;
+}
+.textboderthanh {
+    text-align: center;
+    color: #808080;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0px 20px;
+}
+.textintro {
+    text-align: center;
+    font-size: 14px;
+    color: #8f8f8f;
+}
+.baner-header img {
+    width: 100%;
+}
+img {
+    max-width: 100%;
+}
+/* footer */
+.bgfooter {
+    background:rgb(215 218 0 / 84%);
+ 
+}
+.txtfooter {
+    font-size: 15px;
+    margin-bottom: 0px;
+    margin-top: -5px;
+}
+.social-icon{
+          margin-top: 20px;
+        display: flex;
+    }
+    
+ .social-icon li {
+        list-style: none;
+    }
+.social-icon li a{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: #222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        text-decoration: none;
+        border-radius: 4px;
+    }
+.social-icon li a:hover{
+        background: #f00;
+    }
+ .social-icon li a .fa
+     {
+        color: #fff;
+        font-size: 20px;
+    }
+/* tin tức */
+article h3 {
+    text-align: center;
+    padding: 15px 0px;
+    color:#9c6d00;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+ article .new_list .new_item {
+    width: 28%;
+    padding: 12px;
+    float: left;
+    border: 2px solid #ccc;
+    margin-right: 3%;
+ }
+ article .new_list .new_item h4 {
+    font-size: 16px;
+    color: #ad3f00;
+  }
+  article .new_list .new_item img {
+      margin: 10px auto;
+  }
+article .new_list .new_item .content {
+    font-size: 13px;
+  }
+#fix {
+    margin-right: 0px;
+}
+/* contact */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+.BtnNhapLai{
+    background: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+}
+
+
+
+
