@@ -1,3 +1,11 @@
+<?php
+// hàm `session_id()` sẽ trả về giá trị SESSION_ID (tên file session do Web Server tự động tạo)
+// - Nếu trả về Rỗng hoặc NULL => chưa có file Session tồn tại
+if (session_id() === '') {
+    // Yêu cầu Web Server tạo file Session để lưu trữ giá trị tương ứng với CLIENT (Web Browser đang gởi Request)
+    session_start();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +36,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto ">
                 <li class="nav-item active">
-                    <a class="nav-link active" href="trangchu.php"> <i class="fa fa-home" aria-hidden="true"></i> TRANG CHỦ <span
+                    <a class="nav-link active" href="index.php"> <i class="fa fa-home" aria-hidden="true"></i> TRANG CHỦ <span
                             class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -45,21 +53,7 @@
                         <a class="dropdown-item" href="iphone12mini.php">iPHONE 12 Mini</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="iphone11.php">iPHONE 11</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="iphonSE.php">iPHONE SE</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        SAMSUNG
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="galaxyS.php">GALAXY S</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="GalaxyNote.php">GALAXT NOTE</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="galaxyFold.php">GALAXY FOLD</a>
+                  
                     </div>
                 </li>
                 <li class="nav-item active">
@@ -70,14 +64,24 @@
                 </li>
             </ul>
            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                   
-                    <li class="nav-item active">
-                        <a class="nav-link  " href="dangnhap.php" tabindex="-1" aria-disabled="true">Đăng nhập</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="navbar-nav ml-auto">
+                   <?php 
+                        if( isset($_SESSION['kh_tendangnhap_logged'])) : 
+                    ?>
+
+                        <li class="nav-item active">
+                            <a class="nav-link">Chào <?= $_SESSION['kh_tendangnhap_logged']; ?></a>
+                        </li>
+                  
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/storetb/logout.php">Đăng xuất</a>
+                        </li>
+                    <?php else : ?>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/storetb/login.php">Đăng nhập</a>
+                        </li>
+                    <?php endif; ?>
+            </ul>
         </div>
 
     </nav><!-- Thanh nav -->
@@ -169,7 +173,7 @@
                                 <label>Trả trước</span></label><br />
                                 <span>7.977.000<sup><ins>đ</ins></sup></span>
                             </div>
-                            <a href="#" class="btn btn-success ">Đặt mua</a>
+                            <a href="dondathang.php" class="btn btn-success ">Đặt mua</a>
                         </div>
                     </div>
                 </div>
@@ -190,7 +194,7 @@
                                 <label>Trả trước</span></label><br />
                                 <span>8.547.000<sup><ins>đ</ins></sup></span>
                             </div>
-                            <a href="#" class="btn btn-success ">Đặt mua</a>
+                            <a href="dondathang.php" class="btn btn-success ">Đặt mua</a>
                         </div>
                     </div>
                 </div>
@@ -211,7 +215,7 @@
                                 <label>Trả trước</span></label><br />
                                 <span>8.697.000<sup><ins>đ</ins></sup></span>
                             </div>
-                            <a href="#" class="btn btn-success ">Đặt mua</a>
+                            <a href="dondathang.php" class="btn btn-success ">Đặt mua</a>
                         </div>
                     </div>
                 </div>
@@ -234,7 +238,7 @@
                                 <label>Trả trước</span></label><br />
                                 <span>9.597.000<sup><ins>đ</ins></sup></span>
                             </div>
-                            <a href="#" class="btn btn-success ">Đặt mua</a>
+                            <a href="dondathang.php" class="btn btn-success ">Đặt mua</a>
                         </div>
                     </div>
                 </div>
@@ -255,7 +259,7 @@
                                 <label>Trả trước</span></label><br />
                                 <span>9.747.000<sup><ins>đ</ins></sup></span>
                             </div>
-                            <a href="#" class="btn btn-success ">Đặt mua</a>
+                            <a href="dondathang.php" class="btn btn-success ">Đặt mua</a>
                         </div>
                     </div>
                 </div>
@@ -276,7 +280,7 @@
                                 <label>Trả trước</span></label><br />
                                 <span>7.977.000<sup><ins>đ</ins></sup></span>
                             </div>
-                            <a href="#" class="btn btn-success ">Đặt mua</a>
+                            <a href="dondathang.php" class="btn btn-success ">Đặt mua</a>
                         </div>
                     </div>
                 </div>
@@ -299,7 +303,7 @@
                                 <label>Trả trước</span></label><br />
                                 <span>7.977.000<sup><ins>đ</ins></sup></span>
                             </div>
-                            <a href="#" class="btn btn-success ">Đặt mua</a>
+                            <a href="dondathang.php" class="btn btn-success ">Đặt mua</a>
                         </div>
                     </div>
                 </div>
@@ -320,7 +324,7 @@
                                 <label>Trả trước</span></label><br />
                                 <span>7.977.000<sup><ins>đ</ins></sup></span>
                             </div>
-                            <a href="#" class="btn btn-success ">Đặt mua</a>
+                            <a href="dondathang.php" class="btn btn-success ">Đặt mua</a>
                         </div>
                     </div>
                 </div>
@@ -364,9 +368,9 @@
 
 
     <!-- liên kết Jquery -->
-    <script src="averdor/jquery/jquery.min.js"></script>
+    <script src="/storetb/averdor/jquery/jquery.min.js"></script>
     <!-- Liên kết bootstrap JS -->
-    <script src="averdor/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <script src="/storetb/averdor/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

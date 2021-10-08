@@ -30,9 +30,8 @@ if (session_id() === '') {
 </head>
 
 <body>
-    
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand textnav" href="#">TB PHONE</a>
+        <a class="navbar-brand textnav" href="index.php">TB PHONE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -57,23 +56,10 @@ if (session_id() === '') {
                         <a class="dropdown-item" href="iphone12mini.php">iPHONE 12 Mini</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="iphone11.php">iPHONE 11</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="iphonSE.php">iPHONE SE</a>
+                       
                     </div>
                 </li>
-                <li class="nav-item dropdown active ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        SAMSUNG
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="galaxyS.php">GALAXY S</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="GalaxyNote.php">GALAXT NOTE</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="galaxyFold.php">GALAXY FOLD</a>
-                    </div>
-                </li>
+               
                 <li class="nav-item active">
                     <a class="nav-link" href="tintuc.php">TIN TỨC</a>
                 </li>
@@ -317,9 +303,9 @@ if (session_id() === '') {
 
     
     <!-- liên kết Jquery -->
-    <script src="averdor/jquery/jquery.min.js"></script>
+    <script src="/storetb/averdor/jquery/jquery.min.js"></script>
     <!-- Liên kết bootstrap JS -->
-    <script src="averdor/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <script src="/storetb/averdor/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

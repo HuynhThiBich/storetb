@@ -52,23 +52,10 @@ if (session_id() === '') {
                         <a class="dropdown-item" href="iphone12mini.php">iPHONE 12 Mini</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="iphone11.php">iPHONE 11</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="iphonSE.php">iPHONE SE</a>
+                  
                     </div>
                 </li>
-                <li class="nav-item dropdown active ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        SAMSUNG
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="galaxyS.php">GALAXY S</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="GalaxyNote.php">GALAXT NOTE</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="galaxyFold.php">GALAXY FOLD</a>
-                    </div>
-                </li>
+                
                 <li class="nav-item active">
                     <a class="nav-link" href="tintuc.php">TIN TỨC</a>
                 </li>
@@ -78,6 +65,7 @@ if (session_id() === '') {
             </ul>
     </nav><!--kết thúc-->
 
+        <div class="container">
             <?php
                 // nếu người dùng đã đăng nhập
                 if( isset($_SESSION['kh_tendangnhap_logged']) ) {
@@ -102,7 +90,7 @@ if (session_id() === '') {
                  if( isset($_POST['btndangnhap']) ) {
                      $kh_tendangnhap = $_POST['kh_tendangnhap'];
                      $kh_matkhau = $_POST['kh_matkhau'];
-                   
+                
                      // 1 mở kết nối
                     include_once __DIR__ . '/dbconnect.php';
                     // 2 chuẩn bị câu lệnh
@@ -125,7 +113,21 @@ if (session_id() === '') {
                        echo 'Đã đăng nhập thất bại';
                       
                    }
-                 }
+                
+                }
                 ?>
+                
+        </div>
+
+
+
+
+
+    
+            
+    <!-- liên kết Jquery -->
+    <script src="/storetb/averdor/jquery/jquery.min.js"></script>
+    <!-- Liên kết bootstrap JS -->
+    <script src="/storetb/averdor/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
